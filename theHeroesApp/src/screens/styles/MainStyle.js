@@ -1,23 +1,17 @@
 import { StyleSheet } from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const MainStyle = StyleSheet.create({
   shield: {
-    width: 150,
-    height: 150,
-    marginTop: 0,
-    alignSelf: 'flex-end'
-  },
-  logo: {
-    marginTop: 0
+    width: wp('40%'),
+    height: hp('20%'),
+    alignSelf: 'center', 
+    padding:5
   },
   text: {
     color: '#fff',
     marginTop: 10,
     fontSize: 20
-  },
-  button: {
-    padding: 0,
-    marginTop: 0
   },
   mainView: {
     flex: 1,
@@ -25,10 +19,13 @@ const MainStyle = StyleSheet.create({
     alignItems: 'center'
   },
   imageBackground: {
-    width: 500,
-    height: 775,
+    width: wp('100%'),
+    height: hp('100%'),
     alignItems: 'center',
-    flex: 1
+  },
+  logo: {
+    width: wp('65%'),
+    height: hp('60%')
   }
 });
 

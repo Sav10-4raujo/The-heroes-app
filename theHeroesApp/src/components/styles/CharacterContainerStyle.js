@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 const CharacterContainerStyle = StyleSheet.create({
   control: {
     backgroundColor: '#0062bc',
-    height: 300,
-    width: 340,
+    height: hp('37%'),
+    width: wp('80%'),
     marginVertical: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -12,11 +13,11 @@ const CharacterContainerStyle = StyleSheet.create({
     borderColor: '#fff'
   },
   profileImage: {
-    width: 270,
-    height: 180
+    width: wp('66%'),
+    height: hp('25%')
   },
   nameText: {
-    fontSize: 20,
+    fontSize: hp('2.5%'),
     color: '#fff',
     marginVertical: 5,
     textAlign: 'center'
@@ -31,8 +32,8 @@ const CharacterContainerStyle = StyleSheet.create({
     alignItems: 'center'
   },
   controlText: {
-    width: 270,
-    height: 60,
+    width: wp('66%'),
+    height: hp('7%'),
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#0062bc',

@@ -1,10 +1,7 @@
 import { StyleSheet } from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const CharacterStyle = StyleSheet.create({
-  image: {
-    width: 50,
-    height: 50
-  },
   background: {
     backgroundColor: '#80baed',
     flex: 1
@@ -16,8 +13,8 @@ const CharacterStyle = StyleSheet.create({
   },
   profileContainer: {
     backgroundColor: '#0062bc',
-    height: 550,
-    width: 360,
+    height: hp('70%'),
+    width: wp('85%'),
     marginVertical: 10,
     alignItems: 'center',
     justifyContent: 'space-around',
@@ -25,8 +22,8 @@ const CharacterStyle = StyleSheet.create({
     borderColor: '#fff'
   },
   profileImage: {
-    width: 300,
-    height: 210
+    width: wp('75%'),
+    height: hp('25%')
   },
   controlImageProfile: {
     borderWidth: 3,
@@ -34,21 +31,21 @@ const CharacterStyle = StyleSheet.create({
     translateY: 10
   },
   descriptionBorder: {
-    width: 320,
-    height: 210,
+    width: wp('75%'),
+    height: hp('26%'),
     justifyContent: 'center',
     borderWidth: 3,
     alignItems: 'center'
   },
   nameText: {
-    fontSize: 20,
+    fontSize: hp('2.5%'),
     color: '#fff',
     textAlign: 'center'
   },
   nameControl: {
     borderWidth: 3,
-    width: 300,
-    height: 60,
+    width: wp('75%'),
+    height: hp('7%'),
     borderColor: '#000',
     justifyContent: 'center'
   },
@@ -61,15 +58,15 @@ const CharacterStyle = StyleSheet.create({
     borderColor: '#fff'
   },
   insideBorder: {
-    width: 300,
-    height: 190,
+    width: wp('70%'),
+    height: hp('24%'),
     borderWidth: 3,
     borderColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center'
   },
   descriptionText: {
-    fontSize: 15,
+    fontSize: hp('2%'),
     color: '#fff',
     margin: 5,
     textAlign: 'justify'

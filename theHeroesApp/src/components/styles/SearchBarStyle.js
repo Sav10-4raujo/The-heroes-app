@@ -1,31 +1,33 @@
 import { StyleSheet } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 const SearchBarStyle = StyleSheet.create({
   control: {
     backgroundColor: '#0575e6',
     borderTopWidth: 3,
-    height: 85,
-    width: 415,
-    flexDirection: 'row'
+    height: hp('10%'),
+    width: wp('100%'),
+    flexDirection: 'row',
+    alignSelf: 'center'
   },
   arrow: {
-    width: 55,
-    height: 55,
-    margin: 7
+    width: wp('14%'),
+    height: hp('7%'),
+    margin: 3
   },
   Controlarrows: {
     flexDirection: 'row',
     alignSelf: 'flex-start'
   },
   searchInput: {
-    width: 200,
-    height: 45,
+    width: wp('50%'),
+    height: hp('5.5%'),
     borderWidth: 2,
     backgroundColor: '#fff',
     borderRadius: 8,
     alignSelf: 'center',
     textAlign: 'center',
-    fontSize: 15
+    fontSize: hp('2%')
 
   },
   controlInputSearch: {
@@ -37,14 +39,14 @@ const SearchBarStyle = StyleSheet.create({
   searchButton: {
     alignSelf: 'center',
     borderWidth: 2,
-    padding: 5,
+    padding: 7,
     borderRadius: 100,
     marginLeft: 5,
     backgroundColor: '#fff'
   },
   imageSearchButton: {
-    width: 30,
-    height: 30
+    width: wp('8%'),
+    height: hp('4%')
   }
 });
 
